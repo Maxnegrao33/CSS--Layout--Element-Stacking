@@ -1,0 +1,39 @@
+O Fluxo normal dos elementos é um abaixo do outro
+(html)
+<div class="box1 box"> </div>
+<div class="box2 box"> </div>
+<div class="box3 box"> </div>
+*Se caso for "inline", irá ficar um ao lado do outro
+
+Name: position
+Value: static|relative|absolute|fixed
+
+Sobre o Z-index - Element Stacking (Empilhamento)
+/*Define a ordem do elemento sobre o empilhamento*/
+.box {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.box1{
+    background-color:red;
+    position: absolute;
+    top: 5px ;
+    left: 5px;
+    z-index: 3; /*indicador de camada - neste caso indica para esta imagem estar na camada 3*/
+}
+.box2{
+    background-color:yellow;
+    position: absolute;
+    top: 10px ;
+    left: 10px;
+}
+.box3{
+    background-color:green;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}Element stacking (Empilhamento)
+
+/*O último elemento sempre terá maior força que o primeiro*/
